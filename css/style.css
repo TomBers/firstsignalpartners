@@ -78,3 +78,14 @@ a { color: var(--accent-dark); }
 .site-footer p { margin: 4px 0; }
 
 @media (max-width: 640px) { h1 { font-size: 2.1rem; } .hero { padding: 70px 0; } }
+
+/* Inline signup form */
+.signup { max-width: 640px; margin: 36px auto 0; }
+.signup-title { font-family: var(--font-heading); font-size: 1.2rem; margin: 0 0 12px; color: var(--white); }
+.signup-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.signup input, .signup select { flex: 1 1 200px; padding: 13px 14px; border: 2px solid transparent; border-radius: 3px; font: inherit; font-size: .95rem; color: var(--text); background: var(--white); }
+.signup input:focus, .signup select:focus { outline: none; border-color: var(--accent); }
+.signup .btn { cursor: pointer; font-family: inherit; }
+.signup .btn:disabled { opacity: .6; cursor: default; }
+.signup-msg { min-height: 1.5em; margin: 10px 0 0; font-size: .9rem; color: var(--accent); }
+.signup.done .signup-row { display: none; }
