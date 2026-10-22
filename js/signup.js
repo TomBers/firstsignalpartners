@@ -2,9 +2,7 @@
    Update the IDs/options below if the Google Form changes. */
 (function () {
   var FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/formResponse";
-  var EMAIL_ENTRY = "entry.REPLACE_WITH_EMAIL_ENTRY_ID"; // from "Get pre-filled link"
-  var ROLE_ENTRY = "entry.864193288";
-  var ROLES = ["Hiring", "Looking to move", "Partner / Other"]; // must match the Google Form options exactly
+  var EMAIL_ENTRY = "entry.1194721197";
 
   var hosts = document.querySelectorAll(".cta .container");
   if (!hosts.length) return;
@@ -16,10 +14,6 @@
       '<p class="signup-title">Register your interest</p>' +
       '<div class="signup-row">' +
       '<input type="email" name="' + EMAIL_ENTRY + '" placeholder="Your email address" aria-label="Email address" required autocomplete="email">' +
-      '<select name="' + ROLE_ENTRY + '" aria-label="I am" required>' +
-      '<option value="" disabled selected>I am&hellip;</option>' +
-      ROLES.map(function (r) { return '<option>' + r + '</option>'; }).join("") +
-      '</select>' +
       '<button type="submit" class="btn btn-primary">Sign up</button>' +
       '</div>' +
       '<p class="signup-msg" role="status" aria-live="polite"></p>';
