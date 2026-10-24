@@ -10,7 +10,20 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="index.html" aria-label="Lateral Smart"><img src="https://github.com/user-attachments/assets/96243401-67ee-42fc-a3ef-31da36f68163" alt="Lateral Smart" class="brand-logo"></a>
-      <nav class="main-nav"><a href="index.html" class="active">Home</a><a href="how-it-works.html">How It Works</a><a href="our-value.html">Our Value</a><a href="search.html">Search</a><a href="strat.html">Strategy</a></nav>
+      <div class="nav-wrap">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="our-value.html">Our Value</a>
+          <a href="search.html">Search</a>
+          <a href="strat.html">Strategy</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
       <a class="btn btn-small btn-outline" href="#">Log In</a>
     </div>
   </header>
@@ -30,7 +43,7 @@
             <p class="tagline"><strong>Law firms &amp; Businesses</strong> — confidentially search for Partners based on your criteria and strategy.</p>
             <div class="hero-inline-form">
               <div class="hero-inline-search">
-                <input type="text" placeholder="type here..." aria-label="Search law firm criteria" autocomplete="off">
+                <textarea rows="2" placeholder="type here..." aria-label="Search law firm criteria" autocomplete="off"></textarea>
               </div>
               <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/viewform" target="_blank" rel="noopener">GENERATE MATCHES</a>
             </div>
@@ -39,7 +52,7 @@
             <p class="tagline"><strong>Partners</strong> — confidentially identify the platforms searching for your practice and expertise.</p>
             <div class="hero-inline-form">
               <div class="hero-inline-search">
-                <input type="text" placeholder="type here..." aria-label="Search partner expertise" autocomplete="off">
+                <textarea rows="2" placeholder="type here..." aria-label="Search partner expertise" autocomplete="off"></textarea>
               </div>
               <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/viewform" target="_blank" rel="noopener">SEARCH OPPORTUNITIES</a>
             </div>
@@ -154,5 +167,25 @@
     </div>
   </footer>
   <script src="js/signup.js"></script>
+  <script>
+    const navWrap = document.querySelector('.nav-wrap');
+    const navToggle = document.querySelector('.nav-toggle');
+
+    if (navWrap && navToggle) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navWrap.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+
+    document.querySelectorAll('.hero-inline-search textarea').forEach((textarea) => {
+      const resize = () => {
+        textarea.style.height = 'auto';
+        textarea.style.height = Math.max(textarea.scrollHeight, 68) + 'px';
+      };
+      textarea.addEventListener('input', resize);
+      resize();
+    });
+  </script>
 </body>
 </html>
