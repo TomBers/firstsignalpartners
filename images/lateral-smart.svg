@@ -1,11 +1,10 @@
-<svg width="1800" height="560" viewBox="0 0 1800 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lateral Smart logo">
-  <rect x="0" y="0" width="1800" height="560" fill="none" stroke="#C9A76A" stroke-width="10"/>
+<svg width="1800" height="560" viewBox="0 0 1800 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lateral Smart brand mark">
+  <rect x="0" y="0" width="1800" height="560" fill="none" stroke="#C7A86A" stroke-width="10"/>
 
-  <polygon points="0,0 910,0 750,560 0,560" fill="#0F2742"/>
-  <polygon points="910,0 1800,0 1800,560 750,560" fill="#F3F3F3"/>
+  <polygon points="0,0 910,0 760,560 0,560" fill="#0F2742"/>
+  <polygon points="910,0 1800,0 1800,560 760,560" fill="#F3F3F3"/>
+  <line x1="910" y1="0" x2="760" y2="560" stroke="#C7A86A" stroke-width="9"/>
 
-  <line x1="910" y1="0" x2="750" y2="560" stroke="#C9A76A" stroke-width="8"/>
-
-  <text x="455" y="295" text-anchor="middle" fill="#FFFFFF" font-size="184" font-weight="600" letter-spacing="6" font-family="'Segoe UI', 'Avenir Next', Arial, sans-serif" textLength="760" lengthAdjust="spacingAndGlyphs">LATERAL</text>
-  <text x="1355" y="295" text-anchor="middle" fill="#0F2742" font-size="184" font-weight="600" letter-spacing="6" font-family="'Segoe UI', 'Avenir Next', Arial, sans-serif" textLength="760" lengthAdjust="spacingAndGlyphs">SMART</text>
+  <text x="430" y="310" text-anchor="middle" fill="#FFFFFF" font-size="188" font-weight="700" letter-spacing="5" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" textLength="780" lengthAdjust="spacingAndGlyphs">LATERAL</text>
+  <text x="1345" y="310" text-anchor="middle" fill="#0F2742" font-size="188" font-weight="700" letter-spacing="5" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" textLength="780" lengthAdjust="spacingAndGlyphs">SMART</text>
 </svg>
