@@ -57,7 +57,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 }
 .brand-logo {
   display: block;
-  height: 32px;
+  height: 52px;
   width: auto;
 }
 .main-nav {
@@ -271,7 +271,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   .buttons { flex-direction: column; }
   .btn { width: 100%; }
   .main-nav { justify-content: center; }
-  .brand-logo { height: 26px; }
+  .brand-logo { height: 42px; }
 }
 
 /* Inline signup form */
