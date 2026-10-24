@@ -164,6 +164,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   margin: 0 0 20px;
   color: var(--white);
   line-height: 1.45;
+  font-style: italic;
 }
 .hero h1,
 .hero .lead,
