@@ -10,12 +10,25 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="index.html" aria-label="Lateral Smart"><img src="https://github.com/user-attachments/assets/96243401-67ee-42fc-a3ef-31da36f68163" alt="Lateral Smart" class="brand-logo"></a>
-      <nav class="main-nav"><a href="index.html">Home</a><a href="how-it-works.html">How It Works</a><a href="our-value.html">Our Value</a><a href="search.html" class="active">Search</a><a href="search.html#signup">Sign Up</a></nav>
-      <a class="btn btn-small btn-outline" href="#">Log In</a>
+
+      <div class="header-actions">
+        <a class="btn btn-small btn-outline login-link" href="#">Log In</a>
+        <div class="nav-wrap">
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="why-it-works.html" class="active">Why It Works</a>
+            <a href="strategic-partners.html">Strategic Partners</a>
+          </nav>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
     </div>
   </header>
+
   <main>
-    <!-- HERO: edit the heading and intro text below -->
     <section class="hero hero-alt">
       <div class="container">
         <p class="eyebrow">An intelligent, two-way approach to lateral partner search.</p>
@@ -23,21 +36,23 @@
         <p class="lead">For law firms defining their next strategic hire and partners considering their next professional chapter, better matching starts with better information.</p>
       </div>
     </section>
+
     <section class="section ">
       <div class="container">
         <div class="grid">
-          <div class="card"><p class="eyebrow">For Law Firms</p><h3>Define your search. Discover relevant talent.</h3><p>Specify the requirements that matter. AI-driven search agents help analyze the data behind expertise, relationships, and client fit.</p></div>
-          <div class="card"><p class="eyebrow">For Partners</p><h3>Understand where your profile fits.</h3><p>Assess how your practice and commercial credentials align with opportunities that may not yet be visible in the market.</p></div>
+          <div class="card">
+            <p class="eyebrow">For Law Firms</p>
+            <h3>Define your search. Discover relevant talent.</h3>
+            <p>Specify the requirements that matter. AI-driven search agents help analyse and prioritise your firm’s criteria, allowing you to focus on the right prospective partner profile.</p>
+          </div>
+          <div class="card">
+            <p class="eyebrow">For Partners</p>
+            <h3>Understand where your profile fits.</h3>
+            <p>Assess how your practice and commercial credentials align with opportunities that may be a strong strategic match, while keeping your confidentiality and professional priorities at the forefront.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <div class="container">
-      <p>Partner Intelligence &middot; Lateral Partner Search</p>
-      <p class="small">Matches indicate potential alignment, not guaranteed suitability. Information and commercial credentials remain subject to appropriate confirmation.</p>
-    </div>
-  </footer>
-  <script src="js/signup.js"></script>
 </body>
 </html>
