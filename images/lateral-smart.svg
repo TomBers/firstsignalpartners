@@ -1,6 +1,9 @@
-<svg width="520" height="120" viewBox="0 0 520 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lateral Smart">
-  <rect width="520" height="120" fill="none"/>
-  <text x="0" y="45" fill="#0F2742" font-size="42" font-weight="800" letter-spacing="4" font-family="Arial, Helvetica, sans-serif">LATERAL</text>
-  <rect x="0" y="57" width="180" height="5" fill="#B08D57"/>
-  <text x="0" y="102" fill="#0F2742" font-size="38" font-weight="900" letter-spacing="6" font-family="Arial, Helvetica, sans-serif">SMART</text>
+<svg width="620" height="180" viewBox="0 0 620 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lateral Smart premium logo">
+  <rect width="620" height="180" fill="none"/>
+  <g transform="translate(24,20)" fill="#B08D57" opacity="0.9">
+    <path d="M18 0 L24 12 L36 12 L27 20 L30 32 L18 25 L6 32 L9 20 L0 12 L12 12 Z"/>
+  </g>
+  <text x="56" y="82" font-size="52" font-weight="600" letter-spacing="2" fill="#0F2742" font-family="Georgia, 'Times New Roman', serif">LATERAL</text>
+  <line x1="58" y1="98" x2="260" y2="98" stroke="#B08D57" stroke-width="3"/>
+  <text x="58" y="148" font-size="42" font-weight="800" letter-spacing="7" fill="#0F2742" font-family="Arial, Helvetica, sans-serif">SMART</text>
 </svg>
