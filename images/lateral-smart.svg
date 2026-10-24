@@ -1,9 +1,17 @@
-<svg width="620" height="180" viewBox="0 0 620 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lateral Smart premium logo">
-  <rect width="620" height="180" fill="none"/>
-  <g transform="translate(24,20)" fill="#B08D57" opacity="0.9">
-    <path d="M18 0 L24 12 L36 12 L27 20 L30 32 L18 25 L6 32 L9 20 L0 12 L12 12 Z"/>
+<svg width="760" height="220" viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lateral Smart premium logo">
+  <rect width="760" height="220" fill="none"/>
+
+  <g transform="translate(18 24)">
+    <rect x="0" y="0" width="120" height="120" rx="24" fill="#0F2742"/>
+    <path d="M34 82 L54 62 L68 76 L92 52" fill="none" stroke="#B08D57" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="92" cy="52" r="8" fill="#B08D57"/>
+    <path d="M34 82 L34 32" fill="none" stroke="#D8C29B" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+    <path d="M34 32 L58 32" fill="none" stroke="#D8C29B" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
   </g>
-  <text x="56" y="82" font-size="52" font-weight="600" letter-spacing="2" fill="#0F2742" font-family="Georgia, 'Times New Roman', serif">LATERAL</text>
-  <line x1="58" y1="98" x2="260" y2="98" stroke="#B08D57" stroke-width="3"/>
-  <text x="58" y="148" font-size="42" font-weight="800" letter-spacing="7" fill="#0F2742" font-family="Arial, Helvetica, sans-serif">SMART</text>
+
+  <g transform="translate(170 0)">
+    <text x="0" y="96" font-size="62" font-weight="800" letter-spacing="4" fill="#0F2742" font-family="Arial, Helvetica, sans-serif">LATERAL</text>
+    <line x1="2" y1="115" x2="292" y2="115" stroke="#B08D57" stroke-width="4"/>
+    <text x="2" y="170" font-size="54" font-weight="900" letter-spacing="7" fill="#0F2742" font-family="Arial, Helvetica, sans-serif">SMART</text>
+  </g>
 </svg>
