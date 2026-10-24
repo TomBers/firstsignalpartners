@@ -1,147 +1,253 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | PARTNER INTELLIGENCE</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Lateral Smart"><img src="https://github.com/user-attachments/assets/96243401-67ee-42fc-a3ef-31da36f68163" alt="Lateral Smart" class="brand-logo"></a>
+document.addEventListener('DOMContentLoaded', () => {
+  const navWraps = document.querySelectorAll('.nav-wrap');
 
-      <div class="header-actions">
-        <a class="btn btn-small btn-outline login-link" href="#">Log In</a>
-        <div class="nav-wrap">
-          <nav class="main-nav" aria-label="Main navigation">
-            <a href="how-it-works.html">How It Works</a>
-            <a href="why-it-works.html">Why It Works</a>
-            <a href="strategic-partners.html">Strategic Partners</a>
-          </nav>
-          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
+  navWraps.forEach((navWrap) => {
+    const toggle = navWrap.querySelector('.nav-toggle');
+    const nav = navWrap.querySelector('.main-nav');
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <p class="eyebrow">AI-DRIVEN SEARCH FOR CONSENT-LED INTRODUCTIONS BETWEEN LEADING LAW FIRMS, GLOBAL BUSINESSES &amp; LAW FIRM PARTNERS</p>
-        <h1 class="hero-main-title">Block out the noise. The right intelligence changes everything.</h1>
-        <p class="hero-subtitle">Law firms and global businesses are searching for expert Partners to hire, retain or engage. Partners want to know who is looking.</p>
-        <p class="lead">AI-driven intelligence for opportunities you don't yet know about.</p>
-        <div class="hero-pair">
-          <div class="hero-feature">
-            <p class="tagline"><strong>Law firms &amp; Businesses</strong> — confidentially find a Partner based on your criteria and strategy.</p>
-            <div class="hero-inline-form">
-              <div class="hero-inline-search">
-                <textarea rows="1" placeholder="Tell LateralSmart what you are looking for..." aria-label="Search law firm criteria" autocomplete="off"></textarea>
-              </div>
-              <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/viewform" target="_blank" rel="noopener">GENERATE MATCHES</a>
-            </div>
-          </div>
-          <div class="hero-feature">
-            <p class="tagline"><strong>Partners</strong> — confidentially identify the platforms searching for your practice and expertise.</p>
-            <div class="hero-inline-form">
-              <div class="hero-inline-search">
-                <textarea rows="1" placeholder="Tell LateralSmart what you are looking for..." aria-label="Search partner expertise" autocomplete="off"></textarea>
-              </div>
-              <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/viewform" target="_blank" rel="noopener">SEARCH OPPORTUNITIES</a>
-            </div>
-          </div>
-        </div>
-        <p class="supporting-copy">The AI-driven tool used by leading private and public companies, US Am Law 200, UK 200 and leading mid-market and boutique law firms and Partners to identify valuable opportunities in the market.</p>
-        <p class="supporting-copy">Connecting law firms and Partners through intelligent matching, commercial insight, and discreet, confidential, data-driven, consent-led introductions.</p>
-      </div>
-    </section>
+    if (!toggle || !nav) return;
 
-    <section class="hero-callout">
-      <div class="container">
-        <p class="eyebrow">Intelligent Partner search for law firms and global businesses begins here.</p>
-        <h2 class="hero-main-title">Better intelligence. Smarter matching. Better decisions.</h2>
-        <p class="hero-callout-copy">Register your interest in partnering with LateralSmart.</p>
-        <div class="buttons single-button">
-          <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/viewform" target="_blank" rel="noopener">REGISTER INTEREST</a>
-        </div>
-      </div>
-    </section>
+    const closeMenu = () => {
+      navWrap.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
 
-    <section class="section alt">
-      <div class="container">
-        <div class="grid">
-          <div class="card">
-            <p class="eyebrow">For Law firms &amp; businesses</p>
-            <h3>Find the partner behind the numbers.</h3>
-            <p>Define your hiring priorities and let AI-driven search identify relevant lateral Partner talent. Explore focused, insight-led options aligned with your strategic objectives and priorities.</p>
-            <div class="buttons single-button">
-              <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/viewform" target="_blank" rel="noopener">Search for Partners</a>
-            </div>
-          </div>
+    const openMenu = () => {
+      navWrap.classList.add('is-open');
+      toggle.setAttribute('aria-expanded', 'true');
+    };
 
-          <div class="card">
-            <p class="eyebrow">For Partners</p>
-            <h3>See where your profile is being considered.</h3>
-            <p>Understand how your expertise, client relationships and strategic value may align with active opportunities and partner requirements emerging in the market.</p>
-            <div class="buttons single-button">
-              <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/viewform" target="_blank" rel="noopener">Search Opportunities</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+    toggle.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="logo" href="index.html" aria-label="Lateral Smart"><img src="https://github.com/user-attachments/assets/96243401-67ee-42fc-a3ef-31da36f68163" alt="Lateral Smart" class="brand-logo"></a>
-      </div>
+      const isOpen = navWrap.classList.contains('is-open');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
 
-      <div class="footer-links">
-        <div class="footer-column">
-          <h3>Platform</h3>
-          <ul>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="why-it-works.html">Why It Works</a></li>
-            <li><a href="#">Log In</a></li>
-          </ul>
-        </div>
+    nav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => closeMenu());
+    });
 
-        <div class="footer-column">
-          <h3>Company</h3>
-          <ul>
-            <li><a href="strategic-partners.html">Strategic Partners</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
+    document.addEventListener('click', (event) => {
+      if (!navWrap.contains(event.target)) {
+        closeMenu();
+      }
+    });
 
-        <div class="footer-column">
-          <h3>Legal &amp; Privacy</h3>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookie Policy &amp; Preferences</a></li>
-            <li><a href="#">Legal Disclaimer</a></li>
-          </ul>
-        </div>
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && navWrap.classList.contains('is-open')) {
+        closeMenu();
+      }
+    });
+  });
+});
 
-        <div class="footer-column">
-          <h3>Resources &amp; Support</h3>
-          <ul>
-            <li><a href="#">Frequently Asked Questions</a></li>
-            <li><a href="#">Help &amp; Support</a></li>
-            <li><a href="#">Security &amp; Data Protection</a></li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="footer-powered">Powered by LateralSmart</div>
-    </div>
-  </footer>
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"}]}    ,
