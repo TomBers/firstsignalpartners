@@ -167,6 +167,15 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 .hero-alt .eyebrow {
   color: var(--white);
 }
+.hero-alt h1 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 4vw, 4.7rem);
+  line-height: 1.03;
+  letter-spacing: -0.045em;
+  margin: 0 0 26px;
+  max-width: 1180px;
+}
 .hero-alt .eyebrow {
   color: var(--accent);
 }
