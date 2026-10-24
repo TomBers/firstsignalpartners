@@ -57,8 +57,9 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 }
 .brand-logo {
   display: block;
-  height: 52px;
+  height: 54px;
   width: auto;
+  max-width: 100%;
 }
 .main-nav {
   display: flex;
