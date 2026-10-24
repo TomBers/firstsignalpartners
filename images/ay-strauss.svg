@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-label="A.Y. Strauss logo">
+  <rect width="900" height="320" fill="#0a4a72"/>
+  <text x="50%" y="52%" text-anchor="middle" dominant-baseline="middle"
+        fill="#ffffff" font-size="84" font-weight="400" letter-spacing="2" font-family="Georgia, 'Times New Roman', serif">
+    A.Y. STRAUSS
+  </text>
+  <text x="50%" y="74%" text-anchor="middle" dominant-baseline="middle"
+        fill="#ffffff" font-size="24" letter-spacing="6" font-family="Arial, Helvetica, sans-serif" font-weight="400">
+    ATTORNEYS AT LAW
+  </text>
+</svg>

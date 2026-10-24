@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="280" viewBox="0 0 800 280" role="img" aria-label="Windels Marx logo">
+  <rect width="800" height="280" fill="#000000"/>
+  <text x="50%" y="46%" text-anchor="middle" dominant-baseline="middle"
+        fill="#ffffff" font-size="46" font-weight="400" letter-spacing="1.5" font-family="Georgia, 'Times New Roman', serif">
+    <tspan x="50%" dy="0">WINDELS</tspan>
+    <tspan x="50%" dy="52">MARX</tspan>
+  </text>
+  <rect x="625" y="48" width="3" height="154" fill="#ffffff"/>
+</svg>
