@@ -266,7 +266,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   min-width: 220px;
   display: flex;
   align-items: center;
-  min-height: 68px;
+  min-height: 52px;
   padding: 0;
   border-radius: 8px;
   border: 1px solid rgba(15, 39, 66, 0.18);
@@ -275,8 +275,8 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 }
 .hero-inline-search textarea {
   width: 100%;
-  min-height: 68px;
-  max-height: 180px;
+  min-height: 52px;
+  max-height: 120px;
   border: none;
   background: transparent;
   color: var(--text);
@@ -412,6 +412,18 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
     line-height: 1.6;
     max-width: 100%;
   }
+  .hero-inline-form { flex-direction: column; align-items: stretch; }
+  .hero-inline-search {
+    width: 100%;
+    max-width: none;
+    min-height: 46px;
+  }
+  .hero-inline-search textarea {
+    min-height: 46px;
+    max-height: 100px;
+    font-size: .92rem;
+    padding: 10px 12px;
+  }
 }
 
 /* Inline signup form */
@@ -493,11 +505,10 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   .card .btn,
   .cta .btn,
   .btn { width: 100%; }
-  .hero-inline-form { flex-direction: column; align-items: stretch; }
-  .hero-inline-search { width: 100%; max-width: none; }
 }
 
 @media (min-width: 1200px) {
   .hero-main-title { max-width: 1200px; }
 }
+
 
