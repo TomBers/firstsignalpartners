@@ -124,7 +124,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 /* Hero */
 .hero {
   color: var(--white);
-  padding: 60px 0 88px;
+  padding: 32px 0 80px;
   background: linear-gradient(rgba(15,39,66,.82), rgba(15,39,66,.82)),
     url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=70") center/cover, var(--navy);
 }
@@ -138,7 +138,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   font-size: clamp(2.5rem, 4vw, 4.7rem);
   line-height: 1.03;
   letter-spacing: -0.045em;
-  margin: 0 0 18px;
+  margin: 0 0 12px;
   max-width: 1180px;
 }
 .hero-subtitle {
@@ -147,7 +147,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   line-height: 1.35;
   color: rgba(255, 255, 255, 0.96);
   max-width: 980px;
-  margin: 0 0 18px;
+  margin: 0 0 14px;
 }
 .hero .eyebrow {
   text-transform: uppercase;
@@ -155,13 +155,13 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   font-size: .78rem;
   font-weight: 700;
   color: var(--accent);
-  margin: 0 0 14px;
+  margin: 0 0 8px;
   max-width: 1000px;
 }
 .hero .lead {
   font-size: clamp(1rem, 1.5vw, 1.2rem);
   max-width: 820px;
-  margin: 0 0 26px;
+  margin: 0 0 20px;
   color: var(--white);
   line-height: 1.45;
 }
