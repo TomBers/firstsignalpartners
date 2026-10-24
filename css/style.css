@@ -50,11 +50,15 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   padding-bottom: 14px;
 }
 .logo {
-  font-family: var(--font-heading);
-  font-size: 1.35rem;
-  color: var(--navy);
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: .01em;
+  line-height: 1;
+}
+.brand-logo {
+  display: block;
+  height: 32px;
+  width: auto;
 }
 .main-nav {
   display: flex;
@@ -267,6 +271,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   .buttons { flex-direction: column; }
   .btn { width: 100%; }
   .main-nav { justify-content: center; }
+  .brand-logo { height: 26px; }
 }
 
 /* Inline signup form */
