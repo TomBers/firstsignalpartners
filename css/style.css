@@ -195,7 +195,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
-  max-width: 980px;
+  max-width: 960px;
   margin: 0 0 28px;
 }
 .hero-feature {
@@ -216,46 +216,8 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   line-height: 1.5;
 }
 .hero-feature .tagline strong { color: var(--white); }
-.hero-inline-form {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 18px;
-}
-.hero-inline-search {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 300px;
-  min-height: 52px;
-  padding: 0 14px;
-  border-radius: 8px;
-  border: 1px solid rgba(15, 39, 66, 0.18);
-  background: var(--white);
-  box-shadow: 0 10px 24px rgba(15, 39, 66, 0.14);
-}
-.hero-inline-search input {
-  width: 100%;
-  border: none;
-  background: transparent;
-  color: var(--text);
-  font: inherit;
-  font-size: 0.98rem;
-  padding: 0;
-  margin: 0;
-  min-width: 0;
-  caret-color: var(--accent-dark);
-}
-.hero-inline-search input::placeholder {
-  color: rgba(43, 52, 64, 0.38);
-  font-style: italic;
-}
-.hero-inline-search input:focus {
-  outline: none;
-}
 .hero-feature .btn {
-  margin-top: 0;
+  margin-top: 18px;
   align-self: flex-start;
 }
 .supporting-copy {
@@ -387,8 +349,6 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   .card .btn,
   .cta .btn,
   .btn { width: 100%; }
-  .hero-inline-form { flex-direction: column; align-items: stretch; }
-  .hero-inline-search { width: 100%; max-width: none; }
 }
 
 @media (min-width: 1200px) {
