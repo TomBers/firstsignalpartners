@@ -1,7 +1,7 @@
 /* ==========================================================
-      Partner Intelligence - site styles
-      Edit the colours below to re-brand the whole site.
-      ========================================================== */
+       Partner Intelligence - site styles
+       Edit the colours below to re-brand the whole site.
+       ========================================================== */
 :root {
   --navy: #0f2742;
   --accent: #b08d57;
@@ -57,7 +57,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 }
 .brand-logo {
   display: block;
-  height: 54px;
+  height: 60px;
   width: auto;
   max-width: 100%;
 }
@@ -301,7 +301,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   .buttons { flex-direction: column; }
   .btn { width: 100%; }
   .main-nav { justify-content: center; }
-  .brand-logo { height: 42px; }
+  .brand-logo { height: 48px; }
 }
 
 /* Inline signup form */
@@ -309,6 +309,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 .signup-title { font-family: var(--font-heading); font-size: 1.2rem; margin: 0 0 12px; color: var(--white); }
 .signup-row { display: flex; gap: 10px; flex-wrap: wrap; }
 .signup input, .signup select { flex: 1 1 200px; padding: 13px 14px; border: 2px solid transparent; border-radius: 3px; font: inherit; font-size: .95rem; color: var(--text); background: var(--white); }
+.signup input::placeholder { color: var(--muted); }
 .signup input:focus, .signup select:focus { outline: none; border-color: var(--accent); }
 .signup .btn { cursor: pointer; font-family: inherit; }
 .signup .btn:disabled { opacity: .6; cursor: default; }
