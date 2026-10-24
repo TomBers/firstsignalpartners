@@ -124,7 +124,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 /* Hero */
 .hero {
   color: var(--white);
-  padding: 90px 0 88px;
+  padding: 60px 0 88px;
   background: linear-gradient(rgba(15,39,66,.82), rgba(15,39,66,.82)),
     url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=70") center/cover, var(--navy);
 }
@@ -138,7 +138,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   font-size: clamp(2.5rem, 4vw, 4.7rem);
   line-height: 1.03;
   letter-spacing: -0.045em;
-  margin: 0 0 26px;
+  margin: 0 0 18px;
   max-width: 1180px;
 }
 .hero-subtitle {
@@ -155,7 +155,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   font-size: .78rem;
   font-weight: 700;
   color: var(--accent);
-  margin: 0 0 18px;
+  margin: 0 0 14px;
   max-width: 1000px;
 }
 .hero .lead {
