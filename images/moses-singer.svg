@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-label="Moses Singer logo">
-  <rect width="900" height="320" fill="#4b4b4b"/>
-  <text x="50%" y="42%" text-anchor="middle" dominant-baseline="middle"
-        fill="#ffffff" font-size="94" font-weight="700" letter-spacing="-3" font-family="Arial, Helvetica, sans-serif">
+  <rect width="900" height="320" fill="#1f1f1f"/>
+  <text x="50%" y="46%" text-anchor="middle" dominant-baseline="middle"
+        fill="#ffffff" font-size="86" font-weight="700" letter-spacing="-2" font-family="Arial, Helvetica, sans-serif">
     <tspan x="50%" dy="0">MOSES</tspan>
-    <tspan x="50%" dy="96">SINGER</tspan>
+    <tspan x="50%" dy="94">SINGER</tspan>
   </text>
-  <rect x="220" y="116" width="455" height="7" fill="#d5655a"/>
+  <rect x="250" y="159" width="400" height="6" fill="#ffffff"/>
 </svg>
