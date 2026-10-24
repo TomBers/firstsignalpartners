@@ -481,11 +481,89 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 .cta .btn-primary { background: var(--accent); }
 
 /* Footer */
-.site-footer { background: #0a1b2e; color: #aab6c4; padding: 30px 0; text-align: center; }
-.site-footer p { margin: 4px 0; }
+.site-footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.8);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 34px 0 18px;
+}
+.footer-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+}
+.footer-brand {
+  flex: 0 0 220px;
+}
+.footer-brand .logo {
+  margin-bottom: 12px;
+}
+.footer-brand p {
+  margin: 0;
+  color: rgba(255,255,255,0.75);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap: 26px;
+  flex: 1;
+}
+.footer-column h3 {
+  margin: 0 0 12px;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  font-weight: 700;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-column li {
+  margin: 0 0 8px;
+}
+.footer-column a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.footer-column a:hover {
+  color: var(--white);
+}
+.footer-powered {
+  flex: 0 0 auto;
+  align-self: flex-end;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.72);
+  padding-bottom: 6px;
+}
+.site-footer .small {
+  color: rgba(255,255,255,0.75);
+}
 
 @media (max-width: 840px) {
   .hero-pair { grid-template-columns: 1fr; }
+  .footer-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .footer-brand,
+  .footer-powered {
+    flex: 1 1 auto;
+    align-self: flex-start;
+  }
+  .footer-links {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  }
 }
 @media (max-width: 640px) {
   .hero-main-title { font-size: clamp(2rem, 9vw, 3rem); letter-spacing: -0.04em; }
@@ -532,6 +610,9 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   }
   .hero-callout-copy {
     font-size: 1rem;
+  }
+  .footer-links {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -619,3 +700,56 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 @media (min-width: 1200px) {
   .hero-main-title { max-width: 1200px; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
