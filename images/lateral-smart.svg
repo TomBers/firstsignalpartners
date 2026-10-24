@@ -1,17 +1,6 @@
 <svg width="760" height="220" viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lateral Smart premium logo">
   <rect width="760" height="220" fill="none"/>
-
-  <g transform="translate(18 24)">
-    <rect x="0" y="0" width="120" height="120" rx="24" fill="#0F2742"/>
-    <path d="M34 82 L54 62 L68 76 L92 52" fill="none" stroke="#B08D57" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="92" cy="52" r="8" fill="#B08D57"/>
-    <path d="M34 82 L34 32" fill="none" stroke="#D8C29B" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
-    <path d="M34 32 L58 32" fill="none" stroke="#D8C29B" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
-  </g>
-
-  <g transform="translate(170 0)">
-    <text x="0" y="96" font-size="62" font-weight="800" letter-spacing="4" fill="#0F2742" font-family="Arial, Helvetica, sans-serif">LATERAL</text>
-    <line x1="2" y1="115" x2="292" y2="115" stroke="#B08D57" stroke-width="4"/>
-    <text x="2" y="170" font-size="54" font-weight="900" letter-spacing="7" fill="#0F2742" font-family="Arial, Helvetica, sans-serif">SMART</text>
-  </g>
+  <text x="380" y="88" text-anchor="middle" fill="#0F2742" font-size="64" font-weight="800" letter-spacing="3" font-family="'Segoe UI', 'Avenir Next', Arial, sans-serif" textLength="420" lengthAdjust="spacingAndGlyphs">LATERAL</text>
+  <line x1="180" y1="110" x2="580" y2="110" stroke="#B08D57" stroke-width="5" stroke-linecap="round"/>
+  <text x="380" y="180" text-anchor="middle" fill="#0F2742" font-size="58" font-weight="900" letter-spacing="8" font-family="'Segoe UI', 'Avenir Next', Arial, sans-serif" textLength="420" lengthAdjust="spacingAndGlyphs">SMART</text>
 </svg>
