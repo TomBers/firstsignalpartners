@@ -256,7 +256,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 .hero-inline-form {
   display: flex;
   align-items: flex-end;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
   margin-top: 18px;
 }
@@ -265,7 +265,8 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   max-width: 420px;
   min-width: 220px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   min-height: 44px;
   padding: 0;
   border-radius: 8px;
@@ -276,7 +277,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 .hero-inline-search textarea {
   width: 100%;
   min-height: 44px;
-  max-height: 74px;
+  max-height: 120px;
   border: none;
   background: transparent;
   color: var(--text);
@@ -288,11 +289,17 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   resize: none;
   overflow: hidden;
   text-align: left;
+  vertical-align: top;
+  display: block;
   caret-color: var(--accent-dark);
 }
 .hero-inline-search textarea::placeholder {
   color: rgba(43, 52, 64, 0.38);
   font-style: italic;
+  text-align: left;
+  line-height: 1.35;
+  padding: 0;
+  transform: none;
 }
 .hero-inline-search textarea:focus {
   outline: none;
@@ -412,7 +419,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
     line-height: 1.6;
     max-width: 100%;
   }
-  .hero-inline-form { flex-direction: column; align-items: stretch; }
+  .hero-inline-form { flex-direction: column; align-items: stretch; gap: 8px; }
   .hero-inline-search {
     width: 100%;
     max-width: none;
@@ -421,7 +428,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   }
   .hero-inline-search textarea {
     min-height: 42px;
-    max-height: 72px;
+    max-height: 96px;
     font-size: .92rem;
     line-height: 1.35;
     padding: 9px 12px;
