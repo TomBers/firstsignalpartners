@@ -34,7 +34,6 @@
         <h1 class="hero-main-title">Block out the noise. The right intelligence changes everything.</h1>
         <p class="hero-subtitle">Law firms and global businesses are searching for expert Partners to hire, retain or engage. Partners want to know who is looking.</p>
         <p class="lead">AI-driven intelligence for opportunities you don't yet know about.</p>
-
         <div class="hero-pair">
           <div class="hero-feature">
             <p class="tagline"><strong>Law firms &amp; Businesses</strong> — confidentially find a Partner based on your criteria and strategy.</p>
@@ -45,52 +44,13 @@
               <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/viewform" target="_blank" rel="noopener">GENERATE MATCHES</a>
             </div>
           </div>
-
           <div class="hero-feature">
             <p class="tagline"><strong>Partners</strong> — confidentially identify the platforms searching for your practice and expertise.</p>
             <div class="hero-inline-form">
               <div class="hero-inline-search">
                 <textarea rows="1" placeholder="Tell LateralSmart what you are looking for..." aria-label="Search partner expertise" autocomplete="off"></textarea>
               </div>
-              <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/viewform" target="_blank" rel="noopener">SEARCH OPPORTUNITIES</a>
-            </div>
-          </div>
-        </div>
-
-        <p class="supporting-copy">The AI-driven tool used by leading private and public companies, US Am Law 200, UK 200 and leading mid-market and boutique law firms and Partners to identify valuable opportunities.</p>
-        <p class="supporting-copy">Connecting law firms and Partners through intelligent matching, commercial insight, and discreet, confidential, data-driven, consent-led introductions.</p>
-      </div>
-    </section>
-
-    <section class="hero-callout">
-      <div class="container">
-        <p class="eyebrow">Intelligent Partner search for law firms and global businesses begins here.</p>
-        <h2 class="hero-main-title">Better intelligence. Smarter matching. Better decisions.</h2>
-        <p class="hero-callout-copy">Register your interest in partnering with LateralSmart.</p>
-        <div class="buttons single-button">
-          <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/viewform" target="_blank" rel="noopener">REGISTER INTEREST</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container">
-        <div class="grid">
-          <div class="card">
-            <p class="eyebrow">For Law firms &amp; businesses</p>
-            <h3>Find the partner behind the numbers.</h3>
-            <p>Define your hiring priorities and let AI-driven search identify relevant lateral Partner talent. Explore focused, insight-led options aligned with your strategic objectives and priorities.</p>
-            <div class="buttons single-button">
-              <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/viewform" target="_blank" rel="noopener">Search for Partners</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <p class="eyebrow">For Partners</p>
-            <h3>See where your profile is being considered.</h3>
-            <p>Understand how your expertise, client relationships and strategic value may align with active opportunities and partner requirements emerging in the market.</p>
-            <div class="buttons single-button">
-              <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/viewform" target="_blank" rel="noopener">Search Opportunities</a>
+              <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScUo92u9E1zZybbDZl6HCqa9umLVzZrXFmEc5nP3b95vK2EXg/viewform" target="_blank" rel="noopener">DISCOVER OPPORTUNITIES</a>
             </div>
           </div>
         </div>
@@ -110,43 +70,63 @@
           <ul>
             <li><a href="how-it-works.html">How It Works</a></li>
             <li><a href="why-it-works.html">Why It Works</a></li>
-            <li><a href="#">Log In</a></li>
+            <li><a href="strategic-partners.html">Strategic Partners</a></li>
           </ul>
         </div>
-
         <div class="footer-column">
           <h3>Company</h3>
           <ul>
-            <li><a href="strategic-partners.html">Strategic Partners</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>Legal &amp; Privacy</h3>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookie Policy &amp; Preferences</a></li>
-            <li><a href="#">Legal Disclaimer</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>Resources &amp; Support</h3>
-          <ul>
-            <li><a href="#">Frequently Asked Questions</a></li>
-            <li><a href="#">Help &amp; Support</a></li>
-            <li><a href="#">Security &amp; Data Protection</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </div>
-
-      <div class="footer-powered">Powered by LateralSmart</div>
     </div>
   </footer>
 
-  <script src="js/site-menu.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navWrap = document.querySelector('.nav-wrap');
+      const navToggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.main-nav');
+      if (!navWrap || !navToggle || !nav) return;
+
+      const closeMenu = function () {
+        navWrap.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      };
+
+      const openMenu = function () {
+        navWrap.classList.add('is-open');
+        navToggle.setAttribute('aria-expanded', 'true');
+      };
+
+      navToggle.addEventListener('click', function () {
+        const isOpen = navWrap.classList.contains('is-open');
+        if (isOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!navWrap.contains(event.target)) {
+          closeMenu();
+        }
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+          closeMenu();
+        }
+      });
+    });
+  </script>
 </body>
 </html>

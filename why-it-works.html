@@ -58,17 +58,10 @@
           </li>
           <li>
             <p class="eyebrow">04 — Request a consent-led introduction</p>
-            <h3>When a law firm or business wishes to engage with a prospective Partner, the platform can facilitate a confidential approach at your direction.</h3>
-            <p>A secure flagging system enables you to establish interest and obtain relevant consents before either party shares their identity or details.</p>
+            <h3>When relevance is established, a discreet introduction can be requested with consent at the centre.</h3>
+            <p>Helping deliver the right conversation with the right partner at the right time.</p>
           </li>
         </ol>
-      </div>
-    </section>
-
-    <section class="section alt center">
-      <div class="container">
-        <h2>Confidential by design. Transparent by agreement.</h2>
-        <p class="section-intro">Our model combines AI-driven talent intelligence, controlled identity disclosure, recorded consent and clear commercial terms. Partners retain control over whether and when their information is shared.</p>
       </div>
     </section>
   </main>
@@ -78,296 +71,69 @@
       <div class="footer-brand">
         <a class="logo" href="index.html" aria-label="Lateral Smart"><img src="https://github.com/user-attachments/assets/96243401-67ee-42fc-a3ef-31da36f68163" alt="Lateral Smart" class="brand-logo"></a>
       </div>
-
       <div class="footer-links">
         <div class="footer-column">
           <h3>Platform</h3>
           <ul>
             <li><a href="how-it-works.html">How It Works</a></li>
             <li><a href="why-it-works.html">Why It Works</a></li>
-            <li><a href="#">Log In</a></li>
+            <li><a href="strategic-partners.html">Strategic Partners</a></li>
           </ul>
         </div>
-
         <div class="footer-column">
           <h3>Company</h3>
           <ul>
-            <li><a href="strategic-partners.html">Strategic Partners</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>Legal &amp; Privacy</h3>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookie Policy &amp; Preferences</a></li>
-            <li><a href="#">Legal Disclaimer</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>Resources &amp; Support</h3>
-          <ul>
-            <li><a href="#">Frequently Asked Questions</a></li>
-            <li><a href="#">Help &amp; Support</a></li>
-            <li><a href="#">Security &amp; Data Protection</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </div>
-
-      <div class="footer-powered">Powered by LateralSmart</div>
     </div>
   </footer>
 
-  <script src="js/site-menu.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navWrap = document.querySelector('.nav-wrap');
+      const navToggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.main-nav');
+      if (!navWrap || !navToggle || !nav) return;
+
+      const closeMenu = function () {
+        navWrap.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      };
+
+      const openMenu = function () {
+        navWrap.classList.add('is-open');
+        navToggle.setAttribute('aria-expanded', 'true');
+      };
+
+      navToggle.addEventListener('click', function () {
+        const isOpen = navWrap.classList.contains('is-open');
+        if (isOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!navWrap.contains(event.target)) {
+          closeMenu();
+        }
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+          closeMenu();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
