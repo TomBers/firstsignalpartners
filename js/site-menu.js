@@ -1,0 +1,48 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const navWraps = document.querySelectorAll('.nav-wrap');
+
+  navWraps.forEach((navWrap) => {
+    const toggle = navWrap.querySelector('.nav-toggle');
+    const nav = navWrap.querySelector('.main-nav');
+
+    if (!toggle || !nav) return;
+
+    const closeMenu = () => {
+      navWrap.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+
+    const openMenu = () => {
+      navWrap.classList.add('is-open');
+      toggle.setAttribute('aria-expanded', 'true');
+    };
+
+    toggle.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      const isOpen = navWrap.classList.contains('is-open');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    nav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => closeMenu());
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!navWrap.contains(event.target)) {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && navWrap.classList.contains('is-open')) {
+        closeMenu();
+      }
+    });
+  });
+});
