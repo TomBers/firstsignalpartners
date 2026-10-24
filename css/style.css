@@ -517,7 +517,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--accent);
+  color: #ffffff;
   font-weight: 700;
 }
 .footer-column ul {
@@ -611,6 +611,18 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   .hero-callout-copy {
     font-size: 1rem;
   }
+  .site-footer {
+    text-align: left;
+  }
+  .footer-inner {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .footer-brand,
+  .footer-links,
+  .footer-powered {
+    text-align: left;
+  }
   .footer-links {
     grid-template-columns: 1fr;
   }
@@ -700,56 +712,3 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 @media (min-width: 1200px) {
   .hero-main-title { max-width: 1200px; }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
