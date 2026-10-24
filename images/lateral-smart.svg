@@ -1,17 +1,14 @@
 <svg width="1800" height="560" viewBox="0 0 1800 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lateral Smart logo">
   <rect width="1800" height="560" fill="none"/>
 
-  <!-- Left block -->
   <rect x="0" y="0" width="910" height="560" fill="#0F2742"/>
-  <text x="455" y="315" text-anchor="middle" fill="#FFFFFF" font-size="200" font-weight="800" letter-spacing="6" font-family="'Segoe UI', 'Avenir Next', Arial, sans-serif" textLength="760" lengthAdjust="spacingAndGlyphs">LATERAL</text>
-  <line x1="170" y1="370" x2="665" y2="370" stroke="#C9A76A" stroke-width="14" stroke-linecap="round"/>
-  <circle cx="170" cy="370" r="18" fill="#C9A76A"/>
-  <circle cx="665" cy="370" r="18" fill="#C9A76A"/>
+  <text x="455" y="316" text-anchor="middle" fill="#FFFFFF" font-size="182" font-weight="700" letter-spacing="4" font-family="'Segoe UI', 'Avenir Next', Arial, sans-serif" textLength="750" lengthAdjust="spacingAndGlyphs">LATERAL</text>
+  <line x1="170" y1="382" x2="730" y2="382" stroke="#C9A76A" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="170" cy="382" r="16" fill="#C9A76A"/>
+  <circle cx="730" cy="382" r="16" fill="#C9A76A"/>
 
-  <!-- Right block -->
   <rect x="910" y="0" width="890" height="560" fill="#F4F4F4"/>
-  <text x="1355" y="315" text-anchor="middle" fill="#0F2742" font-size="200" font-weight="800" letter-spacing="6" font-family="'Segoe UI', 'Avenir Next', Arial, sans-serif" textLength="760" lengthAdjust="spacingAndGlyphs">SMART</text>
-  <line x1="1080" y1="370" x2="1610" y2="370" stroke="#C9A76A" stroke-width="14" stroke-linecap="round"/>
-  <circle cx="1080" cy="370" r="18" fill="#C9A76A"/>
-  <path d="M1610 370 L1695 370 L1695 350 L1740 370 L1695 390 L1695 370 Z" fill="#C9A76A"/>
+  <text x="1355" y="316" text-anchor="middle" fill="#0F2742" font-size="182" font-weight="700" letter-spacing="4" font-family="'Segoe UI', 'Avenir Next', Arial, sans-serif" textLength="750" lengthAdjust="spacingAndGlyphs">SMART</text>
+  <path d="M1080 382 H1625 L1688 382 L1655 350 L1655 414 Z" fill="#C9A76A"/>
+  <circle cx="1080" cy="382" r="16" fill="#C9A76A"/>
 </svg>
