@@ -424,6 +424,46 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   opacity: 0.96;
 }
 
+.partner-quote-section {
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+.partner-quote-shell {
+  background: linear-gradient(135deg, rgba(15,39,66,0.97), rgba(30,63,98,0.93));
+  border: 2px solid rgba(176, 141, 87, 0.7);
+  border-radius: 26px;
+  padding: clamp(2rem, 4vw, 4rem);
+  box-shadow: 0 22px 48px rgba(15, 39, 66, 0.12);
+}
+.partner-quote-label {
+  display: inline-block;
+  margin: 0 0 1.2rem;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.partner-quote {
+  margin: 0;
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3vw, 3.3rem);
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+.partner-quote p {
+  margin: 0;
+}
+.partner-quote-text {
+  margin-top: 1.5rem;
+  font-size: clamp(1.06rem, 1.8vw, 1.4rem);
+  line-height: 1.6;
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+}
+
 /* Call to action band */
 .cta {
   background: var(--navy);
@@ -579,5 +619,3 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 @media (min-width: 1200px) {
   .hero-main-title { max-width: 1200px; }
 }
-
-
