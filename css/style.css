@@ -157,8 +157,10 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   color: var(--accent);
   margin: 0 0 8px;
   max-width: 1200px;
-  white-space: nowrap;
+  white-space: normal;
   display: block;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 .hero .lead {
   font-size: clamp(1rem, 1.5vw, 1.2rem);
@@ -218,41 +220,46 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 .hero-feature .tagline strong { color: var(--white); }
 .hero-inline-form {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 18px;
 }
 .hero-inline-search {
+  flex: 1 1 300px;
+  max-width: 420px;
+  min-width: 220px;
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 300px;
-  min-height: 52px;
-  padding: 0 14px;
+  min-height: 68px;
+  padding: 0;
   border-radius: 8px;
   border: 1px solid rgba(15, 39, 66, 0.18);
   background: var(--white);
   box-shadow: 0 10px 24px rgba(15, 39, 66, 0.14);
 }
-.hero-inline-search input {
+.hero-inline-search textarea {
   width: 100%;
+  min-height: 68px;
+  max-height: 180px;
   border: none;
   background: transparent;
   color: var(--text);
   font: inherit;
   font-size: 0.98rem;
-  padding: 0;
+  line-height: 1.4;
+  padding: 12px 14px;
   margin: 0;
-  min-width: 0;
+  resize: none;
+  overflow: hidden;
   text-align: left;
   caret-color: var(--accent-dark);
 }
-.hero-inline-search input::placeholder {
+.hero-inline-search textarea::placeholder {
   color: rgba(43, 52, 64, 0.38);
   font-style: italic;
 }
-.hero-inline-search input:focus {
+.hero-inline-search textarea:focus {
   outline: none;
 }
 .hero-feature .btn {
@@ -365,6 +372,12 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   .btn { width: 100%; }
   .main-nav { justify-content: center; }
   .brand-logo { height: 48px; }
+  .hero .eyebrow {
+    letter-spacing: .05em;
+    font-size: .65rem;
+    line-height: 1.6;
+    max-width: 100%;
+  }
 }
 
 /* Inline signup form */
