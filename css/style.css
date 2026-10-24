@@ -235,6 +235,8 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
 .hero-callout .eyebrow {
   margin-bottom: 12px;
   max-width: 760px;
+  color: var(--navy);
+  font-weight: 700;
 }
 .hero-callout .hero-main-title {
   font-size: clamp(2rem, 3vw, 3.2rem);
@@ -242,6 +244,7 @@ h3 { font-size: 1.45rem; margin: 0 0 10px; }
   letter-spacing: -0.04em;
   margin-bottom: 16px;
   max-width: 760px;
+  color: var(--navy);
 }
 .hero-callout .single-button {
   margin: 0;
