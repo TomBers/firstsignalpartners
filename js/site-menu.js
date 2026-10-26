@@ -1,281 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Search | Partner Intelligence</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Lateral Smart"><img src="https://github.com/user-attachments/assets/96243401-67ee-42fc-a3ef-31da36f68163" alt="Lateral Smart" class="brand-logo"></a>
-
-      <div class="header-actions">
-        <a class="btn btn-small btn-outline login-link" href="#">Log In</a>
-        <div class="nav-wrap">
-          <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-            <a href="how-it-works.html">How It Works</a>
-            <a href="why-it-works.html">Why It Works</a>
-            <a href="strategic-partners.html">Strategic Partners</a>
-          </nav>
-          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero hero-alt">
-      <div class="container">
-        <p class="eyebrow">An intelligent, two-way approach to lateral partner search.</p>
-        <h1 class="hero-main-title">Search with greater precision.</h1>
-        <p class="lead">For law firms defining their next strategic hire and partners considering their next professional chapter, better matching starts with better information.</p>
-      </div>
-    </section>
-
-    <section class="section ">
-      <div class="container">
-        <div class="grid">
-          <div class="card">
-            <p class="eyebrow">For Law Firms</p>
-            <h3>Define your search. Discover relevant talent.</h3>
-            <p>Specify the requirements that matter. AI-driven search agents help analyse and prioritise your firm’s criteria, allowing you to focus on the right prospective partner profile.</p>
-          </div>
-          <div class="card">
-            <p class="eyebrow">For Partners</p>
-            <h3>Understand where your profile fits.</h3>
-            <p>Assess how your practice and commercial credentials align with opportunities that may be a strong strategic match, while keeping your confidentiality and professional priorities at the centre of the process.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a class="logo" href="index.html" aria-label="Lateral Smart"><img src="https://github.com/user-attachments/assets/96243401-67ee-42fc-a3ef-31da36f68163" alt="Lateral Smart" class="brand-logo"></a>
-      </div>
-
-      <div class="footer-links">
-        <div class="footer-column">
-          <h3>Platform</h3>
-          <ul>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="why-it-works.html">Why It Works</a></li>
-            <li><a href="#">Log In</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>Company</h3>
-          <ul>
-            <li><a href="strategic-partners.html">Strategic Partners</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>Legal &amp; Privacy</h3>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookie Policy &amp; Preferences</a></li>
-            <li><a href="#">Legal Disclaimer</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>Resources &amp; Support</h3>
-          <ul>
-            <li><a href="#">Frequently Asked Questions</a></li>
-            <li><a href="#">Help &amp; Support</a></li>
-            <li><a href="#">Security &amp; Data Protection</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-powered">Powered by LateralSmart</div>
-    </div>
-  </footer>
-
-  <script src="js/site-menu.js"></script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.addEventListener('DOMContentLoaded', function () {
+  const navWrap = document.querySelector('.nav-wrap');
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+
+  if (!navWrap || !navToggle || !nav) return;
+
+  const closeMenu = function () {
+    navWrap.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  navToggle.addEventListener('click', function () {
+    const isOpen = navWrap.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  nav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('click', function (event) {
+    if (!navWrap.contains(event.target)) closeMenu();
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      closeMenu();
+      navToggle.focus();
+    }
+  });
+});

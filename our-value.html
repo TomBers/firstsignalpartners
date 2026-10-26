@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Strategic Partners | Partner Intelligence</title>
+  <title>Our Value | Partner Intelligence</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
           <nav id="main-nav" class="main-nav" aria-label="Main navigation">
             <a href="how-it-works.html">How It Works</a>
             <a href="why-it-works.html">Why It Works</a>
-            <a href="strategic-partners.html" class="active">Strategic Partners</a>
+            <a href="strategic-partners.html">Strategic Partners</a>
           </nav>
           <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
             <span></span><span></span><span></span>
@@ -30,27 +30,32 @@
   <main>
     <section class="hero hero-alt">
       <div class="container">
-        <p class="eyebrow">Intelligence creates connections. Relationships create value.</p>
-        <h1>Built on strategic relationships.</h1>
-        <p class="lead">Our approach combines AI-driven partner search with a commercially informed understanding of law firms, partner practices, and strategic growth.</p>
+        <p class="eyebrow">Beyond the numbers. Beyond the resume. Beyond conventional recruitment.</p>
+        <h1>Partner value deserves a deeper view.</h1>
+        <p class="lead">The strongest partner decisions come from understanding the full commercial and strategic picture — supported by intelligent technology and informed human judgment.</p>
       </div>
     </section>
 
     <section class="section ">
       <div class="container">
-        <p>We aim to facilitate meaningful connections based on the requirements of each search, the value each partner brings, and the opportunities each firm seeks to develop.</p>
+        <div class="grid">
+          <div class="card">
+            <p class="eyebrow">For Law Firms</p>
+            <h3>Hire for the practice you want to build.</h3>
+            <p>Identify partners whose expertise, relationships and ambitions align with your strategic hiring priorities and long-term vision.</p>
+          </div>
+          <div class="card">
+            <p class="eyebrow">For Partners</p>
+            <h3>Make your next move count.</h3>
+            <p>Your value is not defined by one number. It reflects the practice you've built, the clients you serve and the strategic opportunities you can unlock.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section alt">
+    <section class="section alt center">
       <div class="container">
-        <h2>Our Strategic Partners</h2>
-        <div class="logo-grid">
-          <div class="logo-slot"><img src="images/gunnercooke.svg" alt="Gunnercooke"></div>
-          <div class="logo-slot"><img src="images/windels-marx.svg" alt="Windels Marx"></div>
-          <div class="logo-slot"><img src="images/ay-strauss.svg" alt="A.Y. Strauss"></div>
-          <div class="logo-slot"><img src="images/moses-singer.svg" alt="Moses Singer"></div>
-        </div>
+        <h2>One market. Two perspectives. Smarter alignment.</h2>
       </div>
     </section>
   </main>
@@ -60,69 +65,49 @@
       <div class="footer-brand">
         <a class="logo" href="index.html" aria-label="Lateral Smart"><img src="https://github.com/user-attachments/assets/96243401-67ee-42fc-a3ef-31da36f68163" alt="Lateral Smart" class="brand-logo"></a>
       </div>
+
       <div class="footer-links">
         <div class="footer-column">
           <h3>Platform</h3>
           <ul>
             <li><a href="how-it-works.html">How It Works</a></li>
             <li><a href="why-it-works.html">Why It Works</a></li>
-            <li><a href="strategic-partners.html">Strategic Partners</a></li>
+            <li><a href="#">Log In</a></li>
           </ul>
         </div>
+
         <div class="footer-column">
           <h3>Company</h3>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="strategic-partners.html">Strategic Partners</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Legal &amp; Privacy</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy &amp; Preferences</a></li>
+            <li><a href="#">Legal Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Resources &amp; Support</h3>
+          <ul>
+            <li><a href="#">Frequently Asked Questions</a></li>
+            <li><a href="#">Help &amp; Support</a></li>
+            <li><a href="#">Security &amp; Data Protection</a></li>
           </ul>
         </div>
       </div>
+
+      <div class="footer-powered">Powered by LateralSmart</div>
     </div>
   </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const navWrap = document.querySelector('.nav-wrap');
-      const navToggle = document.querySelector('.nav-toggle');
-      const nav = document.querySelector('.main-nav');
-      if (!navWrap || !navToggle || !nav) return;
-
-      const closeMenu = function () {
-        navWrap.classList.remove('is-open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      };
-
-      const openMenu = function () {
-        navWrap.classList.add('is-open');
-        navToggle.setAttribute('aria-expanded', 'true');
-      };
-
-      navToggle.addEventListener('click', function () {
-        const isOpen = navWrap.classList.contains('is-open');
-        if (isOpen) {
-          closeMenu();
-        } else {
-          openMenu();
-        }
-      });
-
-      nav.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', closeMenu);
-      });
-
-      document.addEventListener('click', function (event) {
-        if (!navWrap.contains(event.target)) {
-          closeMenu();
-        }
-      });
-
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') {
-          closeMenu();
-        }
-      });
-    });
-  </script>
+  <script src="js/site-menu.js"></script>
 </body>
 </html>
