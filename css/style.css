@@ -1,7 +1,7 @@
 /* ==========================================================
-         Partner Intelligence - site styles
-         Edit the colours below to re-brand the whole site.
-         ========================================================== */
+          Partner Intelligence - site styles
+          Edit the colours below to re-brand the whole site.
+          ========================================================== */
 :root {
   --navy: #0f2742;
   --accent: #b08d57;
@@ -359,6 +359,46 @@ h4 { font-size: 1.2rem; margin: 0 0 10px; }
   margin-top: 0;
 }
 
+/* Statement hero */
+.statement-hero {
+  padding: 54px 0 64px;
+  background: linear-gradient(180deg, #f8f6f2 0%, #f1eee8 100%);
+}
+.statement-hero-shell {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(15, 39, 66, 0.08);
+  border-radius: 28px;
+  padding: clamp(1.6rem, 3vw, 3rem);
+  box-shadow: 0 18px 42px rgba(15, 39, 66, 0.06);
+}
+.statement-hero-kicker {
+  margin: 0 0 1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+}
+.statement-hero-title {
+  margin: 0;
+  color: var(--navy);
+  font-family: var(--font-body);
+  font-size: clamp(2.1rem, 3vw, 4.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  font-weight: 800;
+  max-width: 1200px;
+}
+.statement-hero-text {
+  margin: 1.2rem 0 0;
+  max-width: 1000px;
+  color: var(--text);
+  font-size: clamp(1.05rem, 1.5vw, 1.6rem);
+  line-height: 1.45;
+  font-weight: 500;
+}
+
 /* Sections */
 .section { padding: 78px 0; }
 .section.alt { background: var(--light); }
@@ -699,6 +739,27 @@ h4 { font-size: 1.2rem; margin: 0 0 10px; }
   }
   .hero-callout-copy {
     font-size: 1rem;
+  }
+  .statement-hero {
+    padding: 28px 0 38px;
+  }
+  .statement-hero-shell {
+    border-radius: 22px;
+    padding: 1.25rem 1rem 1.3rem;
+  }
+  .statement-hero-kicker {
+    font-size: 0.64rem;
+    letter-spacing: 0.1em;
+  }
+  .statement-hero-title {
+    font-size: clamp(1.8rem, 7vw, 2.8rem);
+    line-height: 1.06;
+    letter-spacing: -0.05em;
+  }
+  .statement-hero-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 0.9rem;
   }
   .site-footer {
     text-align: left;
